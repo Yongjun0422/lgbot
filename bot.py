@@ -1,5 +1,6 @@
 import discord
 from discord import Intents
+import os
 
 intents = discord.Intents.default()
 intents.messages = True
@@ -9,7 +10,8 @@ client = discord.Client(intents=intents)
 async def on_ready():
     print("Online")
 
-client.run("MTM0MTM4NzQ0Mzc5ODE0NzE3Mg.GGviXe.6hQZ5YPDRHo3SxRvttff1tD3694KIG0PYsaFsU")
+access_token = os.environ["BOT_TOKEN"
+client.run(access_token)
 
 
 
